@@ -1,0 +1,25 @@
+name: phiwo_vimbayo
+
+packages:
+  - apps/*
+  - packages/*
+
+scripts:
+  analyze:
+    exec: dart analyze
+  build:
+    exec: flutter pub run build_runner build --delete-conflicting-outputs
+  get:
+    exec: flutter pub get
+  run-question1:
+    exec: flutter run -t lib/main_question1.dart
+  run-question2:
+    exec: flutter run -t lib/main_question2.dart
+  run-question3:
+    exec: flutter run -t lib/main_question3.dart
+  upgrade:
+    exec: flutter pub upgrade
+
+command:
+  bootstrap:
+    usePubspecOverrides: true
